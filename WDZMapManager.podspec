@@ -9,34 +9,49 @@
 Pod::Spec.new do |s|
   s.name             = 'WDZMapManager'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of WDZMapManager.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = '基于高德地图的二次封装'
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/DanielOYC/WDZMapManager'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/DanielOYC/'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'DanielOYC' => '775350532@qq.com' }
-  s.source           = { :git => 'https://github.com/DanielOYC/WDZMapManager.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'http://172.30.17.99/Bonobo.Git.Server/WDZMapManager.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'WDZMapManager/Classes/**/*'
+  s.subspec 'WDZLocationKit' do |ss|
+      
+      ss.source_files = 'WDZMapManager/Classes/WDZLocationKit/**/*'
+      
+      ss.frameworks = 'ExternalAccessory','GLKit','Security','CoreTelephony','SystemConfiguration','CoreLocation'
+      
+      ss.ios.vendored_frameworks = 'WDZMapManager/Classes/AMap_iOSSDK/AMapFoundationKit.framework',
+                                    'WDZMapManager/Classes/AMap_iOSSDK/AMapLocationKit.framework',
+                                    'WDZMapManager/Classes/AMap_iOSSDK/AMapSearchKit.framework'
+      
+      ss.libraries = 'c++','z'
+      
+      #ss.public_header_files = 'WDZMapManager/Classes/WDZLocationKit/KDLocationManager.h'
+      
+  end
   
-  # s.resource_bundles = {
-  #   'WDZMapManager' => ['WDZMapManager/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  #s.subspec 'KDMapViewKit' do |ss|
+  #
+  #  ss.source_files = 'KDMapManager/Classes/KDMapViewKit/**/*'
+  #
+  #  ss.frameworks = 'ExternalAccessory','GLKit','Security','CoreTelephony','SystemConfiguration','CoreLocation'
+  #
+  #  ss.ios.vendored_frameworks = 'KDMapManager/Classes/AMap_iOSSDK/AMapFoundationKit.framework',
+  #                               'KDMapManager/Classes/AMap_iOSSDK/AMapLocationKit.framework',
+  #                               'YCTestKit/Classes/AMap_iOSSDK/MAMapKit.framework',
+  #                               'KDMapManager/Classes/AMap_iOSSDK/AMapSearchKit.framework'
+  #
+  #  ss.libraries = 'c++','z'
+  #
+  #  #ss.public_header_files = 'KDMapManager/Classes/KDLocationKit/KDLocationManager.h'
+  #
+  #end
 end

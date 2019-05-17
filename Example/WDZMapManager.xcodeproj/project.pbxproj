@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		0E492E5837EAA2944B02056F /* Pods-WDZMapManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDZMapManager_Example.debug.xcconfig"; path = "Target Support Files/Pods-WDZMapManager_Example/Pods-WDZMapManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2B43E63C21D19E4B57950A6B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2B43E63C21D19E4B57950A6B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		31A93B59F1C05968F85E3826 /* Pods_WDZMapManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDZMapManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3342252E7F04D9FB1666E504 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3342252E7F04D9FB1666E504 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WDZMapManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDZMapManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,7 +64,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DD6FCE9C3431173B9153743 /* Pods_WDZMapManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDZMapManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD3E9D48D16D7FB8D6BFC42 /* Pods-WDZMapManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDZMapManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-WDZMapManager_Tests/Pods-WDZMapManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CA99F9FE340C42416D705021 /* WDZMapManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WDZMapManager.podspec; path = ../WDZMapManager.podspec; sourceTree = "<group>"; };
+		CA99F9FE340C42416D705021 /* WDZMapManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WDZMapManager.podspec; path = ../WDZMapManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DBED9CA8E3F441EA8F4F2C16 /* Pods-WDZMapManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDZMapManager_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WDZMapManager_Tests/Pods-WDZMapManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F96421431A2417F1F95BCEE3 /* Pods-WDZMapManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDZMapManager_Example.release.xcconfig"; path = "Target Support Files/Pods-WDZMapManager_Example/Pods-WDZMapManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				DBED9CA8E3F441EA8F4F2C16 /* Pods-WDZMapManager_Tests.debug.xcconfig */,
 				9CD3E9D48D16D7FB8D6BFC42 /* Pods-WDZMapManager_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = DanielOYC;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = MTGQCB5B3L;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -494,11 +496,12 @@
 			baseConfigurationReference = 0E492E5837EAA2944B02056F /* Pods-WDZMapManager_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MTGQCB5B3L;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WDZMapManager/WDZMapManager-Prefix.pch";
 				INFOPLIST_FILE = "WDZMapManager/WDZMapManager-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wandianzhang.wdz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -509,11 +512,12 @@
 			baseConfigurationReference = F96421431A2417F1F95BCEE3 /* Pods-WDZMapManager_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MTGQCB5B3L;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WDZMapManager/WDZMapManager-Prefix.pch";
 				INFOPLIST_FILE = "WDZMapManager/WDZMapManager-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wandianzhang.wdz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

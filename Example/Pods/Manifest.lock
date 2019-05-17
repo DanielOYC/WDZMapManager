@@ -1,0 +1,18 @@
+PODS:
+  - WDZMapManager (0.1.0):
+    - WDZMapManager/WDZLocationKit (= 0.1.0)
+  - WDZMapManager/WDZLocationKit (0.1.0)
+
+DEPENDENCIES:
+  - WDZMapManager (from `../`)
+
+EXTERNAL SOURCES:
+  WDZMapManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WDZMapManager: 4de7f8d207a0fe93ff1eab2d2b9c5426dd3ae29e
+
+PODFILE CHECKSUM: d2c30740f5afdb36e476c0bd251cfb9743670c03
+
+COCOAPODS: 1.7.0.beta.3

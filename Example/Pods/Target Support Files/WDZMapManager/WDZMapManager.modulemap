@@ -1,0 +1,6 @@
+framework module WDZMapManager {
+  umbrella header "WDZMapManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
