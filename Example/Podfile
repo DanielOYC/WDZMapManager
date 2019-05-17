@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'WDZMapManager_Example' do
+  pod 'WDZMapManager', :path => '../'
+
+  target 'WDZMapManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
