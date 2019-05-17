@@ -1,6 +1,6 @@
 {
   "name": "WDZMapManager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "基于高德地图的二次封装",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/DanielOYC/",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "http://172.30.17.99/Bonobo.Git.Server/WDZMapManager.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -34,7 +34,8 @@
         "vendored_frameworks": [
           "WDZMapManager/Classes/AMap_iOSSDK/AMapFoundationKit.framework",
           "WDZMapManager/Classes/AMap_iOSSDK/AMapLocationKit.framework",
-          "WDZMapManager/Classes/AMap_iOSSDK/AMapSearchKit.framework"
+          "WDZMapManager/Classes/AMap_iOSSDK/AMapSearchKit.framework",
+          "WDZMapManager/Classes/AMap_iOSSDK/MAMapKit.framework"
         ]
       },
       "libraries": [

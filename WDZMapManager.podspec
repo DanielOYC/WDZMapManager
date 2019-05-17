@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WDZMapManager'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '基于高德地图的二次封装'
 
   s.description      = <<-DESC
@@ -30,7 +30,8 @@ TODO: Add long description of the pod here.
       
       ss.ios.vendored_frameworks = 'WDZMapManager/Classes/AMap_iOSSDK/AMapFoundationKit.framework',
                                     'WDZMapManager/Classes/AMap_iOSSDK/AMapLocationKit.framework',
-                                    'WDZMapManager/Classes/AMap_iOSSDK/AMapSearchKit.framework'
+                                    'WDZMapManager/Classes/AMap_iOSSDK/AMapSearchKit.framework',
+                                    'WDZMapManager/Classes/AMap_iOSSDK/MAMapKit.framework'
       
       ss.libraries = 'c++','z'
       

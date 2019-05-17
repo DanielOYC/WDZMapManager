@@ -1,7 +1,7 @@
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/WDZMapManager
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../WDZMapManager/Classes/AMap_iOSSDK"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-OTHER_LDFLAGS = $(inherited) -l"c++" -l"z" -framework "AMapFoundationKit" -framework "AMapLocationKit" -framework "AMapSearchKit" -framework "CoreLocation" -framework "CoreTelephony" -framework "ExternalAccessory" -framework "GLKit" -framework "Security" -framework "SystemConfiguration"
+OTHER_LDFLAGS = $(inherited) -l"c++" -l"z" -framework "AMapFoundationKit" -framework "AMapLocationKit" -framework "AMapSearchKit" -framework "CoreLocation" -framework "CoreTelephony" -framework "ExternalAccessory" -framework "GLKit" -framework "MAMapKit" -framework "Security" -framework "SystemConfiguration"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}
