@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WDZMapManager'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = '基于高德地图的二次封装'
 
   s.description      = <<-DESC
@@ -18,7 +18,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/DanielOYC/'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'DanielOYC' => '775350532@qq.com' }
-  s.source           = { :git => 'http://172.30.17.99/Bonobo.Git.Server/WDZMapManager.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/DanielOYC/WDZMapManager.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 

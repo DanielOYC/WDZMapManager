@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "Target_WDZLocationManager.h"
 #import "WDZLocationManager.h"
 
 FOUNDATION_EXPORT double WDZMapManagerVersionNumber;

@@ -1,7 +1,7 @@
 PODS:
-  - WDZMapManager (0.1.1):
-    - WDZMapManager/WDZLocationKit (= 0.1.1)
-  - WDZMapManager/WDZLocationKit (0.1.1)
+  - WDZMapManager (0.1.2):
+    - WDZMapManager/WDZLocationKit (= 0.1.2)
+  - WDZMapManager/WDZLocationKit (0.1.2)
 
 DEPENDENCIES:
   - WDZMapManager (from `../`)
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WDZMapManager: ab567c3dc9001a5c195dbbdd871d68d150621407
+  WDZMapManager: 860d4fa014b8caeff81b2f3cd5975f7949c19716
 
 PODFILE CHECKSUM: d2c30740f5afdb36e476c0bd251cfb9743670c03
 
