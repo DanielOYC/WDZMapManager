@@ -15,22 +15,29 @@ typedef void(^getLocationBlock)(BOOL isSuccess,CLLocation *location , NSString *
 
 @interface WDZLocationManager : NSObject
 
-//是否是持续定位,默认为否(单次定位)
-@property (nonatomic , assign)BOOL isLongLocation;
 //获取返回的地址等信息
-@property (nonatomic , copy)getLocationBlock block;
-/**
- 定位管理者
- */
-@property (nonatomic , retain)AMapLocationManager *locationManager;
+@property (nonatomic , copy) getLocationBlock block;
+// 高德定位对象
+@property (nonatomic , retain) AMapLocationManager *locationManager;
+
+// 设置高德地图appKey
++ (void)setAmapAppKey:(NSString *)appKey;
 
 - (instancetype)initWithAppKey:(NSString *)appkey;
 
 /**
- 开始定位,支持单次定位和持续定位,如果需要持续定位,则设置isLongLocation = YES
+ 开启单次定位
  */
--(void)locationSigle;
+- (void)startSingleLocation;
 
-- (void)stoplocation;
+/**
+ 开启持续定位
+ */
+- (void)startRepeatedlyLocation;
+
+/**
+ 停止定位
+ */
+- (void)stopLocation;
 
 @end

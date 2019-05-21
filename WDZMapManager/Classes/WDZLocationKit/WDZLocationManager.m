@@ -10,16 +10,17 @@
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <AMapLocationKit/AMapLocationKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>
+#import <MAMapKit/MAMapKit.h>
 
 @interface WDZLocationManager ()<AMapLocationManagerDelegate,AMapSearchDelegate>
 {
     AMapLocationManager *_locationManager;
     AMapSearchAPI *_mapSearch;
-    CLLocation *selfLocation;
-    NSInteger num;//返回的次数
+    CLLocation *_currentLocation;
+    NSInteger _num;//定位次数
     NSString *_appKey;
+    BOOL _isRepeatLocation;
 }
-
 @end
 
 @implementation WDZLocationManager
@@ -27,12 +28,6 @@
 - (instancetype)init {
     
     if (self = [super init]) {
-        
-//        //设置mapKey
-//        NSDictionary *appkey = ConfigData(@"APPKEY");
-//        NSString *key = appkey[@"MapAppKey"];
-//
-//        [AMapServices sharedServices].apiKey = key;
         
         [self initManager];
         
@@ -71,115 +66,52 @@
 }
     
 /**
- 开始定位
+ 开启单次定位
  */
--(void)locationSigle
-{
-    num = 0;
+- (void)startSingleLocation {
+    
+    _isRepeatLocation = NO;
+    _num = 0;
     //开启持续定位,因为目前支持的是单次定位,采用的方案是持续定位的第一次返回位置,作为单次定位
     [_locationManager startUpdatingLocation];
 }
--(void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location reGeocode:(AMapLocationReGeocode *)reGeocode
-{
-    selfLocation = [location copy];
+
+/**
+ 开启多次定位
+ */
+- (void)startRepeatedlyLocation {
+    
+    [self startSingleLocation];
+    _isRepeatLocation = YES;
+}
+
+- (void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location reGeocode:(AMapLocationReGeocode *)reGeocode {
+    
+    _currentLocation = [location copy];
     //获取到地理位置
     AMapReGeocodeSearchRequest *regeo = [[AMapReGeocodeSearchRequest alloc] init];
     regeo.location = [AMapGeoPoint locationWithLatitude:location.coordinate.latitude longitude:location.coordinate.longitude];
     regeo.requireExtension = YES;
     [_mapSearch AMapReGoecodeSearch:regeo];
 }
+
 //获取搜索出来的建筑物地址,主要根据此方法返回信息
--(void)onReGeocodeSearchDone:(AMapReGeocodeSearchRequest *)request response:(AMapReGeocodeSearchResponse *)response
-{
+- (void)onReGeocodeSearchDone:(AMapReGeocodeSearchRequest *)request response:(AMapReGeocodeSearchResponse *)response {
+    
     if (response.regeocode.formattedAddress.length > 0) {
-        num++;
-        if (!self.isLongLocation) {//单次定位
-            if (num == 1) {
-                self.block(YES, selfLocation, response.regeocode.formattedAddress);
+        _num++;
+        if (!_isRepeatLocation) {//单次定位
+            if (_num == 1) {
+                self.block(YES, _currentLocation, response.regeocode.formattedAddress);
                     [_locationManager stopUpdatingLocation];//获取到地址即停止持续定位
             }
         }else{//持续定位,一直不停的返回
-            self.block(YES, selfLocation, response.regeocode.formattedAddress);
+            self.block(YES, _currentLocation, response.regeocode.formattedAddress);
         }
     }
 }
 
-/**
- *  @brief 当定位发生错误时，会调用代理的此方法。
- *  @param manager 定位 AMapLocationManager 类。
- *  @param error 返回的错误，参考 CLError 。
- */
-- (void)amapLocationManager:(AMapLocationManager *)manager didFailWithError:(NSError *)error
-{
-
-}
-
-/**
- *  @brief 连续定位回调函数.注意：本方法已被废弃，如果实现了amapLocationManager:didUpdateLocation:reGeocode:方法，则本方法将不会回调。
- *  @param manager 定位 AMapLocationManager 类。
- *  @param location 定位结果。
- */
-- (void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location
-{
-
-}
-
-
-/**
- *  @brief 定位权限状态改变时回调函数
- *  @param manager 定位 AMapLocationManager 类。
- *  @param status 定位权限状态。
- */
-- (void)amapLocationManager:(AMapLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
-{
-
-}
-
-/**
- *  @brief 设备方向改变时回调函数
- *  @param manager 定位 AMapLocationManager 类。
- *  @param newHeading 设备朝向。
- */
-- (void)amapLocationManager:(AMapLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
-{
-
-}
-
-/**
- *  @brief 开始监控region回调函数
- *  @param manager 定位 AMapLocationManager 类。
- *  @param region 开始监控的region。
- */
-- (void)amapLocationManager:(AMapLocationManager *)manager didStartMonitoringForRegion:(AMapLocationRegion *)region __attribute__((deprecated("请使用AMapGeoFenceManager")))
-{
-
-}
-
-/**
- *  @brief 进入region回调函数
- *  @param manager 定位 AMapLocationManager 类。
- *  @param region 进入的region。
- */
-- (void)amapLocationManager:(AMapLocationManager *)manager didEnterRegion:(AMapLocationRegion *)region __attribute__((deprecated("请使用AMapGeoFenceManager")))
-{
-
-}
-
-/**
- *  @brief 离开region回调函数
- *  @param manager 定位 AMapLocationManager 类。
- *  @param region 离开的region。
- */
-- (void)amapLocationManager:(AMapLocationManager *)manager didExitRegion:(AMapLocationRegion *)region __attribute__((deprecated("请使用AMapGeoFenceManager")))
-{
-
-}
-
-
-
-
--(AMapLocationManager *)locationManager
-{
+- (AMapLocationManager *)locationManager {
 
     _locationManager = [[AMapLocationManager alloc] init];
     //设置精度
@@ -191,9 +123,25 @@
     return _locationManager;
 }
 
-- (void)stoplocation
-{
+- (void)stopLocation {
+    
     [self.locationManager stopUpdatingLocation];
 }
+
++ (UIView *)mapView {
     
+    ///地图需要v4.5.0及以上版本才必须要打开此选项（v4.5.0以下版本，需要手动配置info.plist）
+    [AMapServices sharedServices].enableHTTPS = YES;
+    
+    ///初始化地图
+    MAMapView *_mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 200)];
+    
+    return _mapView;
+}
+
+#pragma mark - getter,setter
++ (void)setAmapAppKey:(NSString *)appKey {
+    
+    [AMapServices sharedServices].apiKey = appKey;
+}
 @end
