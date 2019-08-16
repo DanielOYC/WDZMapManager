@@ -31,6 +31,7 @@
         
         [self initManager];
         
+        
     }
     return self;
 }
