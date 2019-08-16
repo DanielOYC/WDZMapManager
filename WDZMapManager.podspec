@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WDZMapManager'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = '基于高德地图的二次封装'
 
   s.description      = <<-DESC
