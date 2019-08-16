@@ -523,6 +523,30 @@
 @property (nonatomic, assign) NSInteger restriction;
 @end
 
+@interface AMapFutureTimeInfoElement : AMapSearchObject
+
+///总时长（分钟）
+@property (nonatomic, assign) NSInteger     duration;
+///对应的路径规划方案中的路线
+@property (nonatomic, assign) NSInteger     pathindex;
+/**
+ 0：代表限行已规避或未限行，即该路线没有限行路段
+ 1：代表限行无法规避，即该线路有限行路段
+ */
+@property (nonatomic, assign) NSInteger     restriction;
+///路况信息数组，只会返回AMapTMC中的status、polyline
+@property (nonatomic, strong) NSArray<AMapTMC *> *tmcs;
+
+@end
+
+@interface AMapFutureTimeInfo : AMapSearchObject
+
+///出发时间
+@property (nonatomic, copy)   NSString *startTime;
+///路线列表 AMapFutureTimeInfoElement 数组
+@property (nonatomic, strong) NSArray<AMapFutureTimeInfoElement *> *elements;
+@end
+
 ///步行换乘信息
 @interface AMapWalking : AMapSearchObject
 ///起点坐标
@@ -677,7 +701,7 @@
 
 #pragma mark - 天气查询
 
-///实况天气，仅支持中国大陆、香港、澳门的数据返回
+///实况天气，仅支持中国部分地区数据(台湾省目前没有数据)返回
 @interface AMapLocalWeatherLive : AMapSearchObject
 ///区域编码
 @property (nonatomic, copy) NSString *adcode; 

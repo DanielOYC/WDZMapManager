@@ -82,7 +82,7 @@ typedef NS_ENUM(NSInteger, AMapTruckSizeType)
 @interface AMapPOIKeywordsSearchRequest : AMapPOISearchBaseRequest
 ///查询关键字，多个关键字用“|”分割
 @property (nonatomic, copy)   NSString *keywords; 
-///查询城市，可选值：cityname（中文或中文全拼）、citycode、adcode.(注：台湾地区一律设置为【台湾】，不具体到市。)
+///查询城市，可选值：cityname（中文或中文全拼）、citycode、adcode.(注：台湾省的城市一律设置为【台湾】，不具体到市。)
 @property (nonatomic, copy)   NSString *city;
 ///强制城市限制功能 默认NO，例如：在上海搜索天安门，如果citylimit为true，将不返回北京的天安门相关的POI
 @property (nonatomic, assign) BOOL cityLimit;
@@ -347,6 +347,13 @@ typedef NS_ENUM(NSInteger, AMapTruckSizeType)
 @property (nonatomic, copy) NSString *plateNumber;
 ///使用轮渡,0使用1不使用,默认为0使用
 @property (nonatomic, assign) NSInteger ferry;
+/**
+ 驾车路径规划车辆类型，默认策略为0。
+ 0：普通汽车(默认值);
+ 1：纯电动车;
+ 2：插电混动车
+ */
+@property (nonatomic, assign) NSInteger cartype;
 @end
 
 #pragma mark - AMapWalkingRouteSearchRequest
@@ -660,4 +667,61 @@ typedef NS_ENUM(NSInteger, AMapTruckSizeType)
 @interface AMapShareSearchResponse : AMapSearchObject
 ///转换后的短串
 @property (nonatomic, copy) NSString *shareURL; 
+@end
+
+///未来路线规划（since 6.9.0）
+@interface AMapFutureRouteSearchRequest : AMapRouteSearchBaseRequest
+///出发时间 单位为秒
+@property (nonatomic, copy) NSString *beginTime;
+///时间间隔 单位为秒
+@property (nonatomic, assign) NSInteger interval;
+///时间点个数,最多48个
+@property (nonatomic, assign) NSInteger timeCount;
+/**
+ 未来路线规划策略，默认策略为0。
+ 1，返回的结果考虑路况，尽量躲避拥堵而规划路径，与高德地图的“躲避拥堵”策略一致
+ 2，返回的结果不走高速，与高德地图“不走高速”策略一致
+ 3，返回的结果尽可能规划收费较低甚至免费的路径，与高德地图“避免收费”策略一致
+ 4，返回的结果考虑路况，尽量躲避拥堵而规划路径，并且不走高速，与高德地图的“躲避拥堵&不走高速”策略一致
+ 5，返回的结果尽量不走高速，并且尽量规划收费较低甚至免费的路径结果，与高德地图的“避免收费&不走高速”策略一致
+ 6，返回路径规划结果会尽量的躲避拥堵，并且规划收费较低甚至免费的路径结果，与高德地图的“躲避拥堵&避免收费”策略一致
+ 7，返回的结果尽量躲避拥堵，规划收费较低甚至免费的路径结果，并且尽量不走高速路，与高德地图的“避免拥堵&避免收费&不走高速”策略一致
+ 8，返回的结果会优先选择高速路，与高德地图的“高速优先”策略一致
+ 9，返回的结果会优先考虑高速路，并且会考虑路况躲避拥堵，与高德地图的“躲避拥堵&高速优先”策略一致
+ 10，不考虑路况，返回速度最优、耗时最短的路线，但是此路线不一定距离最短
+ 11，避让拥堵&速度优先&避免收费
+ */
+@property (nonatomic, assign) NSInteger strategy;
+///出发点 POI ID
+@property (nonatomic, copy) NSString *originId;
+///目的地 POI ID
+@property (nonatomic, copy) NSString *destinationId;
+///出发点POI类型编码
+@property (nonatomic, copy) NSString *origintype;
+///目的地POI类型编码
+@property (nonatomic, copy) NSString *destinationtype;
+///终点的父POI ID
+@property (nonatomic, copy) NSString *parentId;
+
+/////是否返回扩展信息，默认为 NO
+//@property (nonatomic, assign) BOOL requireExtension;
+///车牌省份，用汉字填入车牌省份缩写。用于判断是否限行
+@property (nonatomic, copy) NSString *plateProvince;
+///车牌详情,填入除省份及标点之外的字母和数字（需大写）。用于判断是否限行。
+@property (nonatomic, copy) NSString *plateNumber;
+/**
+ 驾车路径规划车辆类型，默认策略为0。
+ 0：普通汽车(默认值);
+ 1：纯电动车;
+ 2：插电混动车
+ */
+@property (nonatomic, assign) NSInteger cartype;
+@end
+
+///未来路线规划（since 6.9.0）
+@interface AMapFutureRouteSearchResponse : AMapSearchObject
+///路径规划方案,只会返回AMapPath中的distance、totalTrafficLights、steps
+@property (nonatomic, strong) NSArray<AMapPath *> *paths;
+///不同时间的规划以及信息列表
+@property (nonatomic, strong) NSArray<AMapFutureTimeInfo *> *timeInfos;
 @end

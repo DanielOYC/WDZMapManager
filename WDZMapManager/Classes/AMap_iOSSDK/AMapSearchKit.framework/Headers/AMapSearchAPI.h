@@ -149,6 +149,12 @@ typedef NS_ENUM(NSInteger, AMapSearchLanguage)
 - (void)AMapTruckRouteSearch:(AMapTruckRouteSearchRequest *)request;
 
 /**
+ * @brief 未来路线规划查询接口 （since 6.9.0）
+ * @param request 查询选项。具体属性字段请参考 AMapTruckRouteSearchRequest 类。
+ */
+- (void)AMapFutureRouteSearch:(AMapFutureRouteSearchRequest *)request;
+
+/**
  * @brief 天气查询接口
  * @param request 查询选项。具体属性字段请参考 AMapWeatherSearchRequest 类。
  */
@@ -309,6 +315,13 @@ typedef NS_ENUM(NSInteger, AMapSearchLanguage)
  * @param response 响应结果，具体字段参考 AMapRouteSearchResponse 。
  */
 - (void)onRouteSearchDone:(AMapRouteSearchBaseRequest *)request response:(AMapRouteSearchResponse *)response;
+
+/**
+ * @brief 未来路径规划查询回调 since 6.9.0
+ * @param request  发起的请求，具体字段参考 AMapRouteSearchBaseRequest 及其子类。
+ * @param response 响应结果，具体字段参考 AMapRouteSearchResponse 。
+ */
+- (void)onFutureRouteSearchDone:(AMapRouteSearchBaseRequest *)request response:(AMapFutureRouteSearchResponse *)response;
 
 /**
  * @brief 距离查询回调
