@@ -7,120 +7,120 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B489334DCD33EC0FF8CF563F0CE2CFE /* WDZLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD91BE1EF602312E0021D676D0389651 /* WDZLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F9C15AE9B92CE5018053D4154C42708 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1201717995C5827AFB7DB829876084F3 /* Foundation.framework */; };
-		2353F4CB2794F80F5EF3FE4B1F9E22B2 /* WDZMapManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B843EB918403EA206D82B3D1E4B7BAC /* WDZMapManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B7FD6A7C9640EF5DEC3159FDE68D2C4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C8D3387D6185F2B6D751736C0BD109 /* CoreTelephony.framework */; };
-		3BB62B27D81FEC60D22CB4705E220B94 /* Pods-WDZMapManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DF9935691C75B0CCD39E2E72CF9E6C /* Pods-WDZMapManager_Example-dummy.m */; };
-		55AB4C6FB4589AB7F83493D520A23804 /* Pods-WDZMapManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDF28DEAB11A196477FEE967AAA0B528 /* Pods-WDZMapManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67FF709775AC5B4D6B6A4CD83D7B2CCB /* WDZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F82307760F3D3A3B72270362D325D9DC /* WDZLocationManager.m */; };
-		6913ED75604C3DB476490452060A084D /* Target_WDZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7007BBBAF62B4458944ED83C3A2093 /* Target_WDZLocationManager.m */; };
-		6A592B6BCF0448E7A75CD3803B4962AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1201717995C5827AFB7DB829876084F3 /* Foundation.framework */; };
-		842DCD9C82C43178CC8377E3F91298C1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCB0973CB520D6B703FC4AF769CC4E2 /* SystemConfiguration.framework */; };
-		911CEC8F8086716FB421644384100C69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1201717995C5827AFB7DB829876084F3 /* Foundation.framework */; };
-		9222542D26C34BCB54284F06AEC3C643 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F27962CC102BE7A66E1F75953395B9 /* Security.framework */; };
-		949821602315050B4D8FF49D935DCF07 /* Pods-WDZMapManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDD466C7899B9D671A23E231FD5594 /* Pods-WDZMapManager_Tests-dummy.m */; };
-		9E239FC73966EBC04138649806A86C6C /* WDZMapManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 468B57D3D6739AD4F3835C960F2F499F /* WDZMapManager-dummy.m */; };
-		9E7AD6DCB05C30AC650683E501CB88EB /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3913563A4FAC7086DA3BF31F6FEBA24 /* GLKit.framework */; };
-		AAE0E37C9A582C63A79BF37CE0B97A88 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B76F158CD2B5B7A07C677F053A67DA /* CoreLocation.framework */; };
-		CAB0D2C3A847D04E2C71F15ED839CA76 /* Pods-WDZMapManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9F4EBCD33643321D45A38805828A43 /* Pods-WDZMapManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEA2B76D75A7393B06EFE8A859E4CF21 /* Target_WDZLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 95C3BAA25C8D6E3FD7715B23DFAC687B /* Target_WDZLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DDC033C3798A4AFF8786647B80D23B89 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A65217254FD53732F498A93B1586A2 /* ExternalAccessory.framework */; };
+		006886D5E1C3E3CDB6758D730074902E /* Target_WDZLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 95C3BAA25C8D6E3FD7715B23DFAC687B /* Target_WDZLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00F10C38BF683A0D0C270CD6B4136701 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB48A7885CF75B9DBBA7D33655EADB4B /* Security.framework */; };
+		110405E080C3B9CFB33485CD2A1D7BFB /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B1A1A8DF6D3F28CD2ED019ED2E31D2 /* GLKit.framework */; };
+		2751D1523E349F3AD3F18CBF02EBE053 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8B86667DDA41E5D625931C920F865B /* ExternalAccessory.framework */; };
+		2B2148B22B28644C5C52C98ED177BFFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54642212E464A6A171FB9AF8B7B40EEC /* Foundation.framework */; };
+		2B3CBB605EDAA5C5BA159CBABB870AE2 /* Target_WDZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7007BBBAF62B4458944ED83C3A2093 /* Target_WDZLocationManager.m */; };
+		4D8EACCB277150EB0D432CBA49EEB703 /* Pods-WDZMapManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9F4EBCD33643321D45A38805828A43 /* Pods-WDZMapManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F07B46D0B46E115FE5B11DC52B32A6B /* WDZMapManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B843EB918403EA206D82B3D1E4B7BAC /* WDZMapManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FF0B3F42A94ACFF0EC3AD97D99CE9A9 /* WDZMapManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 468B57D3D6739AD4F3835C960F2F499F /* WDZMapManager-dummy.m */; };
+		831D475DC6FDED736D3FC052574CAA8B /* WDZLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD91BE1EF602312E0021D676D0389651 /* WDZLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B72D54239595731A4064897FA9BB983 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54642212E464A6A171FB9AF8B7B40EEC /* Foundation.framework */; };
+		9C3A63B7A2BF697FDB8B10559A786C12 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0728ECE3DB5DD6F0F438473455719F50 /* CoreTelephony.framework */; };
+		9CD0EC5398CB247353A2FA1BB23F122B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9E1F0554851F0542D09B700D8D0708 /* SystemConfiguration.framework */; };
+		A7C77F970105E66CE1255A0BA208F102 /* WDZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F82307760F3D3A3B72270362D325D9DC /* WDZLocationManager.m */; };
+		B3B878EB26AC10BB786E982C48021A14 /* Pods-WDZMapManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDF28DEAB11A196477FEE967AAA0B528 /* Pods-WDZMapManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D309931B4126A4CF15AA6AC204A4AE29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54642212E464A6A171FB9AF8B7B40EEC /* Foundation.framework */; };
+		E08DBCD09A1A37DC1A180A95334CDFAF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C7629633325CBB1B668F963C69FF062 /* CoreLocation.framework */; };
+		E609107D8E2186188BED7B3005F0F410 /* Pods-WDZMapManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DF9935691C75B0CCD39E2E72CF9E6C /* Pods-WDZMapManager_Example-dummy.m */; };
+		F3C399EDB3DE886C1F0583FBCB90AEDD /* Pods-WDZMapManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDD466C7899B9D671A23E231FD5594 /* Pods-WDZMapManager_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		163122403CB1EA9B5DF6EFAABEE33952 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BC6FE8B28EA76819451233816801E2F7;
-			remoteInfo = WDZMapManager;
-		};
-		6C03885BA0CAAD1757C54AF7AE750DD9 /* PBXContainerItemProxy */ = {
+		5CE5C696C8A1253E965DA1FA56AC46CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 28C20814482FE5F8DB8CE4E352E512AD;
 			remoteInfo = "Pods-WDZMapManager_Example";
 		};
+		E340BA55CD8152A88B5B500C887D2210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC6FE8B28EA76819451233816801E2F7;
+			remoteInfo = WDZMapManager;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0728ECE3DB5DD6F0F438473455719F50 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		090C0EE8C4F815274DD5619FA8A06DD2 /* WDZMapManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WDZMapManager.xcconfig; sourceTree = "<group>"; };
 		09FCC023C4913F0E3270B729446F3E1B /* Pods-WDZMapManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WDZMapManager_Tests.modulemap"; sourceTree = "<group>"; };
-		0F42DD7F5AD154C12B3424B2D91941CF /* Pods_WDZMapManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WDZMapManager_Tests.framework; path = "Pods-WDZMapManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10095DF032F15957301D6EE4009D7D03 /* Pods-WDZMapManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WDZMapManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1201717995C5827AFB7DB829876084F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		153016800D50C9993BE2EF74A8C57E66 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = WDZMapManager/Classes/AMap_iOSSDK/MAMapKit.framework; sourceTree = "<group>"; };
 		162DA08EC274FA9CACFB8AD8E3803AA7 /* Pods-WDZMapManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WDZMapManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		18F27962CC102BE7A66E1F75953395B9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		166088C6227E57A6FFF77354E5375E1E /* Pods_WDZMapManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WDZMapManager_Tests.framework; path = "Pods-WDZMapManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		190D851B4B60F714A63E1BAED069AA8B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		1935C1BEBE0F6203B2D547D1D8322453 /* Pods-WDZMapManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WDZMapManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1F1D1DF55FA9119F7D7E3779369909D0 /* WDZMapManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WDZMapManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3BCB0973CB520D6B703FC4AF769CC4E2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		406535C09219BC9BE9B5014AC506B78E /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapSearchKit.framework; path = WDZMapManager/Classes/AMap_iOSSDK/AMapSearchKit.framework; sourceTree = "<group>"; };
 		468B57D3D6739AD4F3835C960F2F499F /* WDZMapManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WDZMapManager-dummy.m"; sourceTree = "<group>"; };
 		4983DC33471EC37AC305CDDE3603F6EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		54642212E464A6A171FB9AF8B7B40EEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		56DF9935691C75B0CCD39E2E72CF9E6C /* Pods-WDZMapManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WDZMapManager_Example-dummy.m"; sourceTree = "<group>"; };
 		5B843EB918403EA206D82B3D1E4B7BAC /* WDZMapManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WDZMapManager-umbrella.h"; sourceTree = "<group>"; };
+		5C7629633325CBB1B668F963C69FF062 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		615712E40D5A26E55AAFC351CEF77A27 /* Pods-WDZMapManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WDZMapManager_Example-Info.plist"; sourceTree = "<group>"; };
 		63E1D563E94514BCB129DDF7FCE3749D /* Pods-WDZMapManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WDZMapManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6BB32BB83D202BE706931CAF5769481C /* WDZMapManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WDZMapManager-Info.plist"; sourceTree = "<group>"; };
 		6D7007BBBAF62B4458944ED83C3A2093 /* Target_WDZLocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Target_WDZLocationManager.m; path = WDZMapManager/Classes/WDZLocationKit/Target_WDZLocationManager.m; sourceTree = "<group>"; };
 		72DA46E847971FB1A027BA9F7CF1653A /* Pods-WDZMapManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WDZMapManager_Example.modulemap"; sourceTree = "<group>"; };
 		7A2112837E4EC76FCDC9CAB7B060EB9F /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapFoundationKit.framework; path = WDZMapManager/Classes/AMap_iOSSDK/AMapFoundationKit.framework; sourceTree = "<group>"; };
-		8708EC0E177E60F3473B4AA402D6C38F /* WDZMapManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WDZMapManager.framework; path = WDZMapManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AD3F9B867062CD62439C35FA01E8B6 /* WDZMapManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WDZMapManager-prefix.pch"; sourceTree = "<group>"; };
-		88B76F158CD2B5B7A07C677F053A67DA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		8CF0CFC62C37284AB791500DAB6624E1 /* WDZMapManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WDZMapManager.framework; path = WDZMapManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C3BAA25C8D6E3FD7715B23DFAC687B /* Target_WDZLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Target_WDZLocationManager.h; path = WDZMapManager/Classes/WDZLocationKit/Target_WDZLocationManager.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A7C8D3387D6185F2B6D751736C0BD109 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
-		B996E02D4A059D5E766B0C15568B0BEB /* Pods_WDZMapManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WDZMapManager_Example.framework; path = "Pods-WDZMapManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F8B86667DDA41E5D625931C920F865B /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ExternalAccessory.framework; sourceTree = DEVELOPER_DIR; };
+		B4B1A1A8DF6D3F28CD2ED019ED2E31D2 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		BD9E1F0554851F0542D09B700D8D0708 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		CD91BE1EF602312E0021D676D0389651 /* WDZLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WDZLocationManager.h; path = WDZMapManager/Classes/WDZLocationKit/WDZLocationManager.h; sourceTree = "<group>"; };
 		D465F233DAAE59EF13790BC6C7E174C7 /* Pods-WDZMapManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WDZMapManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DB53A06F9185BF5FF161F7AF00C35713 /* Pods_WDZMapManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WDZMapManager_Example.framework; path = "Pods-WDZMapManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD3783E7A2C4610B18EDD9F57ADCA8E1 /* Pods-WDZMapManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WDZMapManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		E3A41C87664557C7EE45BA6FDE7BE98B /* Pods-WDZMapManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WDZMapManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA9F4EBCD33643321D45A38805828A43 /* Pods-WDZMapManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WDZMapManager_Tests-umbrella.h"; sourceTree = "<group>"; };
 		EDF28DEAB11A196477FEE967AAA0B528 /* Pods-WDZMapManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WDZMapManager_Example-umbrella.h"; sourceTree = "<group>"; };
-		F3913563A4FAC7086DA3BF31F6FEBA24 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
 		F4C24CE96160A34DE9E318652A6EE2F2 /* Pods-WDZMapManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WDZMapManager_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F53A14F36BF38C2060AD4770C067AE73 /* Pods-WDZMapManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WDZMapManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F5BDD466C7899B9D671A23E231FD5594 /* Pods-WDZMapManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WDZMapManager_Tests-dummy.m"; sourceTree = "<group>"; };
 		F82307760F3D3A3B72270362D325D9DC /* WDZLocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WDZLocationManager.m; path = WDZMapManager/Classes/WDZLocationKit/WDZLocationManager.m; sourceTree = "<group>"; };
-		F9A65217254FD53732F498A93B1586A2 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/ExternalAccessory.framework; sourceTree = DEVELOPER_DIR; };
 		FA669358BDB19C60B6BC4E08715068B4 /* Pods-WDZMapManager_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WDZMapManager_Tests-Info.plist"; sourceTree = "<group>"; };
 		FB377394C36541371B8FCDE9A817B456 /* WDZMapManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WDZMapManager.modulemap; sourceTree = "<group>"; };
+		FB48A7885CF75B9DBBA7D33655EADB4B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		FC59126881DBDF510EDF218C4977161E /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapLocationKit.framework; path = WDZMapManager/Classes/AMap_iOSSDK/AMapLocationKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1FC12163A11D841F917AF34783D8D1CE /* Frameworks */ = {
+		2A77421F71467A177B5BD3A0BB7BFD3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A592B6BCF0448E7A75CD3803B4962AB /* Foundation.framework in Frameworks */,
+				8B72D54239595731A4064897FA9BB983 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31970D141965389C2B3EB7B34FAD5B9F /* Frameworks */ = {
+		7D53D57B39E6D93D4DB806CA6E1898DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F9C15AE9B92CE5018053D4154C42708 /* Foundation.framework in Frameworks */,
+				D309931B4126A4CF15AA6AC204A4AE29 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B93CB2F49575D299B9CAF077A590C323 /* Frameworks */ = {
+		C84A116AF10F5DD87243A9502549F671 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAE0E37C9A582C63A79BF37CE0B97A88 /* CoreLocation.framework in Frameworks */,
-				2B7FD6A7C9640EF5DEC3159FDE68D2C4 /* CoreTelephony.framework in Frameworks */,
-				DDC033C3798A4AFF8786647B80D23B89 /* ExternalAccessory.framework in Frameworks */,
-				911CEC8F8086716FB421644384100C69 /* Foundation.framework in Frameworks */,
-				9E7AD6DCB05C30AC650683E501CB88EB /* GLKit.framework in Frameworks */,
-				9222542D26C34BCB54284F06AEC3C643 /* Security.framework in Frameworks */,
-				842DCD9C82C43178CC8377E3F91298C1 /* SystemConfiguration.framework in Frameworks */,
+				E08DBCD09A1A37DC1A180A95334CDFAF /* CoreLocation.framework in Frameworks */,
+				9C3A63B7A2BF697FDB8B10559A786C12 /* CoreTelephony.framework in Frameworks */,
+				2751D1523E349F3AD3F18CBF02EBE053 /* ExternalAccessory.framework in Frameworks */,
+				2B2148B22B28644C5C52C98ED177BFFD /* Foundation.framework in Frameworks */,
+				110405E080C3B9CFB33485CD2A1D7BFB /* GLKit.framework in Frameworks */,
+				00F10C38BF683A0D0C270CD6B4136701 /* Security.framework in Frameworks */,
+				9CD0EC5398CB247353A2FA1BB23F122B /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,9 +198,23 @@
 		8275CCB4E8732497B1021FCBC240F3C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FAB84E95638075056CDEF9E09A927237 /* iOS */,
+				8F54BB3CE610C48517FDFD065DFC2B91 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F54BB3CE610C48517FDFD065DFC2B91 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5C7629633325CBB1B668F963C69FF062 /* CoreLocation.framework */,
+				0728ECE3DB5DD6F0F438473455719F50 /* CoreTelephony.framework */,
+				9F8B86667DDA41E5D625931C920F865B /* ExternalAccessory.framework */,
+				54642212E464A6A171FB9AF8B7B40EEC /* Foundation.framework */,
+				B4B1A1A8DF6D3F28CD2ED019ED2E31D2 /* GLKit.framework */,
+				FB48A7885CF75B9DBBA7D33655EADB4B /* Security.framework */,
+				BD9E1F0554851F0542D09B700D8D0708 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -257,53 +271,39 @@
 		F4E426B397D8401413469A2699658DB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B996E02D4A059D5E766B0C15568B0BEB /* Pods_WDZMapManager_Example.framework */,
-				0F42DD7F5AD154C12B3424B2D91941CF /* Pods_WDZMapManager_Tests.framework */,
-				8708EC0E177E60F3473B4AA402D6C38F /* WDZMapManager.framework */,
+				DB53A06F9185BF5FF161F7AF00C35713 /* Pods_WDZMapManager_Example.framework */,
+				166088C6227E57A6FFF77354E5375E1E /* Pods_WDZMapManager_Tests.framework */,
+				8CF0CFC62C37284AB791500DAB6624E1 /* WDZMapManager.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FAB84E95638075056CDEF9E09A927237 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				88B76F158CD2B5B7A07C677F053A67DA /* CoreLocation.framework */,
-				A7C8D3387D6185F2B6D751736C0BD109 /* CoreTelephony.framework */,
-				F9A65217254FD53732F498A93B1586A2 /* ExternalAccessory.framework */,
-				1201717995C5827AFB7DB829876084F3 /* Foundation.framework */,
-				F3913563A4FAC7086DA3BF31F6FEBA24 /* GLKit.framework */,
-				18F27962CC102BE7A66E1F75953395B9 /* Security.framework */,
-				3BCB0973CB520D6B703FC4AF769CC4E2 /* SystemConfiguration.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1D5DCBCE8F9D08020AFF844471B36F1A /* Headers */ = {
+		0AE72463C07E556CC42967E16DDF988A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55AB4C6FB4589AB7F83493D520A23804 /* Pods-WDZMapManager_Example-umbrella.h in Headers */,
+				006886D5E1C3E3CDB6758D730074902E /* Target_WDZLocationManager.h in Headers */,
+				831D475DC6FDED736D3FC052574CAA8B /* WDZLocationManager.h in Headers */,
+				5F07B46D0B46E115FE5B11DC52B32A6B /* WDZMapManager-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE1709C886BAC750F1329E521F053128 /* Headers */ = {
+		4D91B710A66350483A04D47375AB22F0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA2B76D75A7393B06EFE8A859E4CF21 /* Target_WDZLocationManager.h in Headers */,
-				0B489334DCD33EC0FF8CF563F0CE2CFE /* WDZLocationManager.h in Headers */,
-				2353F4CB2794F80F5EF3FE4B1F9E22B2 /* WDZMapManager-umbrella.h in Headers */,
+				B3B878EB26AC10BB786E982C48021A14 /* Pods-WDZMapManager_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F63BB4D8DE3F44FFF2636CB72DD72D4E /* Headers */ = {
+		AE9908A543AC7B759D6AAC75C53E3A6B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB0D2C3A847D04E2C71F15ED839CA76 /* Pods-WDZMapManager_Tests-umbrella.h in Headers */,
+				4D8EACCB277150EB0D432CBA49EEB703 /* Pods-WDZMapManager_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,50 +312,50 @@
 /* Begin PBXNativeTarget section */
 		28C20814482FE5F8DB8CE4E352E512AD /* Pods-WDZMapManager_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBD698DEE54E15BA8DBAD40EE081B558 /* Build configuration list for PBXNativeTarget "Pods-WDZMapManager_Example" */;
+			buildConfigurationList = 2371B67D5D4D1CFBB6CD314A086FACAB /* Build configuration list for PBXNativeTarget "Pods-WDZMapManager_Example" */;
 			buildPhases = (
-				1D5DCBCE8F9D08020AFF844471B36F1A /* Headers */,
-				BB955C4B31F41BDE5BCF5AD24D50F0BB /* Sources */,
-				31970D141965389C2B3EB7B34FAD5B9F /* Frameworks */,
-				D81DE4240130E55A0DD8484A73B93229 /* Resources */,
+				4D91B710A66350483A04D47375AB22F0 /* Headers */,
+				7117B0FC10F5C3B0573E6029669F5DF6 /* Sources */,
+				2A77421F71467A177B5BD3A0BB7BFD3E /* Frameworks */,
+				7674601120E47DDE61051EC88E3A7212 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				53003A31BA66FF26D2C50F0B1C1E5827 /* PBXTargetDependency */,
+				1755BA9D4BF9B341076D1C8658BF9219 /* PBXTargetDependency */,
 			);
 			name = "Pods-WDZMapManager_Example";
 			productName = "Pods-WDZMapManager_Example";
-			productReference = B996E02D4A059D5E766B0C15568B0BEB /* Pods_WDZMapManager_Example.framework */;
+			productReference = DB53A06F9185BF5FF161F7AF00C35713 /* Pods_WDZMapManager_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4109849E30484B1ACAEC1E0F432F644E /* Pods-WDZMapManager_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3EA6AEADC66B32FC243184246953ED7 /* Build configuration list for PBXNativeTarget "Pods-WDZMapManager_Tests" */;
+			buildConfigurationList = 2831544C39D55EB2D7FD8A05365FA18F /* Build configuration list for PBXNativeTarget "Pods-WDZMapManager_Tests" */;
 			buildPhases = (
-				F63BB4D8DE3F44FFF2636CB72DD72D4E /* Headers */,
-				CE3DCEB8333DF63905E105051CA81283 /* Sources */,
-				1FC12163A11D841F917AF34783D8D1CE /* Frameworks */,
-				9E874FBD126C89FD229E009CADD4F2E8 /* Resources */,
+				AE9908A543AC7B759D6AAC75C53E3A6B /* Headers */,
+				767914FF095CDB08EDF947EEEA3158F9 /* Sources */,
+				7D53D57B39E6D93D4DB806CA6E1898DC /* Frameworks */,
+				713CF46A95037AFC85FCA385866AC7F5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DC6AC5CEF369E9918F02C6CBBDD90B0E /* PBXTargetDependency */,
+				5999314632797B84997E836C1305269C /* PBXTargetDependency */,
 			);
 			name = "Pods-WDZMapManager_Tests";
 			productName = "Pods-WDZMapManager_Tests";
-			productReference = 0F42DD7F5AD154C12B3424B2D91941CF /* Pods_WDZMapManager_Tests.framework */;
+			productReference = 166088C6227E57A6FFF77354E5375E1E /* Pods_WDZMapManager_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BC6FE8B28EA76819451233816801E2F7 /* WDZMapManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C35E0195CBC1864D203231D47D3C04B3 /* Build configuration list for PBXNativeTarget "WDZMapManager" */;
+			buildConfigurationList = E0A9CC993ADCD49FC2D2BB196BB2D5F1 /* Build configuration list for PBXNativeTarget "WDZMapManager" */;
 			buildPhases = (
-				DE1709C886BAC750F1329E521F053128 /* Headers */,
-				5DFB98893A3A48B69A1DB37E1AB7992C /* Sources */,
-				B93CB2F49575D299B9CAF077A590C323 /* Frameworks */,
-				C08B1F24CF237BAF78AF5F6D0C6923A1 /* Resources */,
+				0AE72463C07E556CC42967E16DDF988A /* Headers */,
+				8EBB44F18D3E5FF982D8E0F1B295DDDF /* Sources */,
+				C84A116AF10F5DD87243A9502549F671 /* Frameworks */,
+				9FB8462729F2F03A03D4A5C0D41A058B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -363,7 +363,7 @@
 			);
 			name = WDZMapManager;
 			productName = WDZMapManager;
-			productReference = 8708EC0E177E60F3473B4AA402D6C38F /* WDZMapManager.framework */;
+			productReference = 8CF0CFC62C37284AB791500DAB6624E1 /* WDZMapManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -372,12 +372,12 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -395,21 +395,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9E874FBD126C89FD229E009CADD4F2E8 /* Resources */ = {
+		713CF46A95037AFC85FCA385866AC7F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C08B1F24CF237BAF78AF5F6D0C6923A1 /* Resources */ = {
+		7674601120E47DDE61051EC88E3A7212 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D81DE4240130E55A0DD8484A73B93229 /* Resources */ = {
+		9FB8462729F2F03A03D4A5C0D41A058B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -419,51 +419,112 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5DFB98893A3A48B69A1DB37E1AB7992C /* Sources */ = {
+		7117B0FC10F5C3B0573E6029669F5DF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6913ED75604C3DB476490452060A084D /* Target_WDZLocationManager.m in Sources */,
-				67FF709775AC5B4D6B6A4CD83D7B2CCB /* WDZLocationManager.m in Sources */,
-				9E239FC73966EBC04138649806A86C6C /* WDZMapManager-dummy.m in Sources */,
+				E609107D8E2186188BED7B3005F0F410 /* Pods-WDZMapManager_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB955C4B31F41BDE5BCF5AD24D50F0BB /* Sources */ = {
+		767914FF095CDB08EDF947EEEA3158F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BB62B27D81FEC60D22CB4705E220B94 /* Pods-WDZMapManager_Example-dummy.m in Sources */,
+				F3C399EDB3DE886C1F0583FBCB90AEDD /* Pods-WDZMapManager_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE3DCEB8333DF63905E105051CA81283 /* Sources */ = {
+		8EBB44F18D3E5FF982D8E0F1B295DDDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				949821602315050B4D8FF49D935DCF07 /* Pods-WDZMapManager_Tests-dummy.m in Sources */,
+				2B3CBB605EDAA5C5BA159CBABB870AE2 /* Target_WDZLocationManager.m in Sources */,
+				A7C77F970105E66CE1255A0BA208F102 /* WDZLocationManager.m in Sources */,
+				6FF0B3F42A94ACFF0EC3AD97D99CE9A9 /* WDZMapManager-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		53003A31BA66FF26D2C50F0B1C1E5827 /* PBXTargetDependency */ = {
+		1755BA9D4BF9B341076D1C8658BF9219 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WDZMapManager;
 			target = BC6FE8B28EA76819451233816801E2F7 /* WDZMapManager */;
-			targetProxy = 163122403CB1EA9B5DF6EFAABEE33952 /* PBXContainerItemProxy */;
+			targetProxy = E340BA55CD8152A88B5B500C887D2210 /* PBXContainerItemProxy */;
 		};
-		DC6AC5CEF369E9918F02C6CBBDD90B0E /* PBXTargetDependency */ = {
+		5999314632797B84997E836C1305269C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-WDZMapManager_Example";
 			target = 28C20814482FE5F8DB8CE4E352E512AD /* Pods-WDZMapManager_Example */;
-			targetProxy = 6C03885BA0CAAD1757C54AF7AE750DD9 /* PBXContainerItemProxy */;
+			targetProxy = 5CE5C696C8A1253E965DA1FA56AC46CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
+		0703580D2956181144B1CC9E345A246A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 090C0EE8C4F815274DD5619FA8A06DD2 /* WDZMapManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WDZMapManager/WDZMapManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WDZMapManager/WDZMapManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WDZMapManager/WDZMapManager.modulemap";
+				PRODUCT_MODULE_NAME = WDZMapManager;
+				PRODUCT_NAME = WDZMapManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3790EE0BDFCDA7D2BEB075DBB60D298C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 090C0EE8C4F815274DD5619FA8A06DD2 /* WDZMapManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WDZMapManager/WDZMapManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WDZMapManager/WDZMapManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WDZMapManager/WDZMapManager.modulemap";
+				PRODUCT_MODULE_NAME = WDZMapManager;
+				PRODUCT_NAME = WDZMapManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -518,106 +579,12 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		0B174C6F287BCEDE543FBBA66D9D9F82 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D465F233DAAE59EF13790BC6C7E174C7 /* Pods-WDZMapManager_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WDZMapManager_Example/Pods-WDZMapManager_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WDZMapManager_Example/Pods-WDZMapManager_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2712C2D731FFD3BA292384EF2F69CACE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 090C0EE8C4F815274DD5619FA8A06DD2 /* WDZMapManager.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WDZMapManager/WDZMapManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WDZMapManager/WDZMapManager-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WDZMapManager/WDZMapManager.modulemap";
-				PRODUCT_MODULE_NAME = WDZMapManager;
-				PRODUCT_NAME = WDZMapManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		324FB510B986323836376B2DD6CD79DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 090C0EE8C4F815274DD5619FA8A06DD2 /* WDZMapManager.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WDZMapManager/WDZMapManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WDZMapManager/WDZMapManager-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WDZMapManager/WDZMapManager.modulemap";
-				PRODUCT_MODULE_NAME = WDZMapManager;
-				PRODUCT_NAME = WDZMapManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -676,12 +643,45 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		55D7B78055676EDB12499DD93E2D7A08 /* Release */ = {
+		90458A58B7A15E3BF3E61811D0927C89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A41C87664557C7EE45BA6FDE7BE98B /* Pods-WDZMapManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WDZMapManager_Tests/Pods-WDZMapManager_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WDZMapManager_Tests/Pods-WDZMapManager_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED0A35EACC6F4B57EC9A006C9D9A9F8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 63E1D563E94514BCB129DDF7FCE3749D /* Pods-WDZMapManager_Tests.release.xcconfig */;
 			buildSettings = {
@@ -715,9 +715,9 @@
 			};
 			name = Release;
 		};
-		56123895DEAEDA205A30845DC180326D /* Debug */ = {
+		F1CE784F8B47E9FBDD091BF26DC8CBD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3A41C87664557C7EE45BA6FDE7BE98B /* Pods-WDZMapManager_Tests.debug.xcconfig */;
+			baseConfigurationReference = D465F233DAAE59EF13790BC6C7E174C7 /* Pods-WDZMapManager_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -729,12 +729,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WDZMapManager_Tests/Pods-WDZMapManager_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-WDZMapManager_Example/Pods-WDZMapManager_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WDZMapManager_Tests/Pods-WDZMapManager_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-WDZMapManager_Example/Pods-WDZMapManager_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -748,7 +748,7 @@
 			};
 			name = Debug;
 		};
-		AE886AB69594BBB2082226379EE81E26 /* Release */ = {
+		FB9ADB06E5709A6CFCDF880875B56001 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1935C1BEBE0F6203B2D547D1D8322453 /* Pods-WDZMapManager_Example.release.xcconfig */;
 			buildSettings = {
@@ -785,38 +785,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2371B67D5D4D1CFBB6CD314A086FACAB /* Build configuration list for PBXNativeTarget "Pods-WDZMapManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CE784F8B47E9FBDD091BF26DC8CBD3 /* Debug */,
+				FB9ADB06E5709A6CFCDF880875B56001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2831544C39D55EB2D7FD8A05365FA18F /* Build configuration list for PBXNativeTarget "Pods-WDZMapManager_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90458A58B7A15E3BF3E61811D0927C89 /* Debug */,
+				ED0A35EACC6F4B57EC9A006C9D9A9F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
-				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C35E0195CBC1864D203231D47D3C04B3 /* Build configuration list for PBXNativeTarget "WDZMapManager" */ = {
+		E0A9CC993ADCD49FC2D2BB196BB2D5F1 /* Build configuration list for PBXNativeTarget "WDZMapManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				324FB510B986323836376B2DD6CD79DB /* Debug */,
-				2712C2D731FFD3BA292384EF2F69CACE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E3EA6AEADC66B32FC243184246953ED7 /* Build configuration list for PBXNativeTarget "Pods-WDZMapManager_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				56123895DEAEDA205A30845DC180326D /* Debug */,
-				55D7B78055676EDB12499DD93E2D7A08 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EBD698DEE54E15BA8DBAD40EE081B558 /* Build configuration list for PBXNativeTarget "Pods-WDZMapManager_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0B174C6F287BCEDE543FBBA66D9D9F82 /* Debug */,
-				AE886AB69594BBB2082226379EE81E26 /* Release */,
+				0703580D2956181144B1CC9E345A246A /* Debug */,
+				3790EE0BDFCDA7D2BEB075DBB60D298C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
