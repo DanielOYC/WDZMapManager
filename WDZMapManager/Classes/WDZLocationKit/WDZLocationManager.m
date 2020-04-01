@@ -103,11 +103,13 @@
         _num++;
         if (!_isRepeatLocation) {//单次定位
             if (_num == 1) {
-                self.block(YES, _currentLocation, response.regeocode.formattedAddress);
-                    [_locationManager stopUpdatingLocation];//获取到地址即停止持续定位
+                !self.block?:self.block(YES, _currentLocation, response.regeocode.formattedAddress);
+                !self.block2?:self.block2(YES, _currentLocation, response.regeocode);
+                [_locationManager stopUpdatingLocation];//获取到地址即停止持续定位
             }
         }else{//持续定位,一直不停的返回
-            self.block(YES, _currentLocation, response.regeocode.formattedAddress);
+            !self.block?:self.block(YES, _currentLocation, response.regeocode.formattedAddress);
+            !self.block2?:self.block2(YES, _currentLocation, response.regeocode);
         }
     }
 }

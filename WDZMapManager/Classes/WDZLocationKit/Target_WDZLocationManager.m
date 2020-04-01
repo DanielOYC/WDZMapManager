@@ -8,8 +8,11 @@
 
 #import "Target_WDZLocationManager.h"
 #import "WDZLocationManager.h"
+#import <AMapSearchKit/AMapSearchKit.h>
 
 typedef void (^WDZLocationCallbackBlock)(BOOL isSuccess, CLLocation *location, NSString *addressString);
+// MARK: 为提高外部使用的灵活性，将`逆地理位置编码结果`返回 使用的地方需要引入 #import <AMapSearchKit/AMapSearchKit.h>
+typedef void (^WDZLocationCallbackBlock2)(BOOL isSuccess, CLLocation *location, AMapReGeocode *regeocode);
 
 @interface Target_WDZLocationManager ()
 
@@ -30,6 +33,14 @@ typedef void (^WDZLocationCallbackBlock)(BOOL isSuccess, CLLocation *location, N
             callBack(isSuccess,location,addressString);
         }
     };
+    
+    // MARK: 为提高外部使用的灵活性，将`逆地理位置编码结果`返回
+    self.locationManager.block2 = ^(BOOL isSuccess, CLLocation *location, AMapReGeocode *regeocode) {
+        WDZLocationCallbackBlock2 callBack = params[@"locationBlock"];
+        if (callBack) {
+            callBack(isSuccess,location,regeocode);
+        }
+    };
 }
 
 - (void)Action_repeatedlyLocation:(NSDictionary *)params {
@@ -41,6 +52,14 @@ typedef void (^WDZLocationCallbackBlock)(BOOL isSuccess, CLLocation *location, N
         WDZLocationCallbackBlock callBack = params[@"locationBlock"];
         if (callBack) {
             callBack(isSuccess,location,addressString);
+        }
+    };
+    
+    // MARK: 为提高外部使用的灵活性，将`逆地理位置编码结果`返回
+    self.locationManager.block2 = ^(BOOL isSuccess, CLLocation *location, AMapReGeocode *regeocode) {
+        WDZLocationCallbackBlock2 callBack = params[@"locationBlock"];
+        if (callBack) {
+            callBack(isSuccess,location,regeocode);
         }
     };
 }
