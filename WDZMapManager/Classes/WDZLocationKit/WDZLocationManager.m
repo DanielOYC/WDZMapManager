@@ -96,6 +96,14 @@
     [_mapSearch AMapReGoecodeSearch:regeo];
 }
 
+/// 当定位发生错误时，会调用代理的此方法。
+- (void)amapLocationManager:(AMapLocationManager *)manager didFailWithError:(NSError *)error{
+    //定位失败
+    if (error) {
+        self.block(NO, nil, nil);
+    }
+}
+
 //获取搜索出来的建筑物地址,主要根据此方法返回信息
 - (void)onReGeocodeSearchDone:(AMapReGeocodeSearchRequest *)request response:(AMapReGeocodeSearchResponse *)response {
     
